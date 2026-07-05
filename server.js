@@ -61,7 +61,7 @@ app.post("/pago", async(req, res) => {
                 .status(response.status)
                 .json({
                     ok: false,
-                    message: data.message ? ? "Error en pago Clip",
+                    message: data.message ?? "Error en pago Clip",
                     data,
                 });
         }
